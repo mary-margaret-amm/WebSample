@@ -123,6 +123,7 @@ public class TestCasePage {
                 .isDisplayed();
         Assert.assertTrue(displayed);
         System.out.println("Product successfully added to cart!");
+        System.out.println("Validated");
 
     }
 
