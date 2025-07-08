@@ -100,4 +100,48 @@
             <version>20240303</version>
         </dependency>
 </dependencies>
+<build>
+  <plugins>
+    <plugin>
+      <groupId>net.masterthought</groupId>
+      <artifactId>maven-cucumber-reporting</artifactId>
+      <version>5.7.0</version>
+      <executions>
+        <execution>
+          <id>generate-cucumber-reports</id>
+          <phase>verify</phase> 
+          <goals>
+            <goal>generate</goal>
+          </goals>
+          <configuration>
+            <projectName>My Project</projectName>
+            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+            <jsonFiles>
+            <param>${project.build.directory}/cucumber.json</param>
+            </jsonFiles>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
+    <plugin>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.11</version> <!-- Or latest -->
+    <executions>
+        <execution>
+            <goals>
+                <goal>prepare-agent</goal>
+            </goals>
+        </execution>
+        <execution>
+            <id>report</id>
+            <phase>verify</phase>
+            <goals>
+                <goal>report</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+  </plugins>
+</build>
 </project>
