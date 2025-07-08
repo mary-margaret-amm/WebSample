@@ -1,5 +1,5 @@
 @smoke_1
-Feature: Login Page
+Feature: Mary_Web_Login Page with Scenario outline
 
 #Background: Browser launch
 #Given launch the url
