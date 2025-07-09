@@ -8,7 +8,7 @@
     <artifactId>demotest</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-   <properties>
+    <properties>
          
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
@@ -17,7 +17,9 @@
         <jacoco.version>0.8.13</jacoco.version>
         <junit.version>4.13.2</junit.version>
     </properties>
-<dependencies>
+
+  
+    <dependencies>
  
         <dependency>
             <groupId>junit</groupId>
