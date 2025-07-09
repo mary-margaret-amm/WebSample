@@ -26,4 +26,3 @@ When User enters password "testuser123"
 When User clicks the login button
 Then User should be Logged in as "testuser1"
 Then Click Logout button
-    

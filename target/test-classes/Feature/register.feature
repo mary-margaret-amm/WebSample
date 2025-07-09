@@ -7,4 +7,4 @@ Then Verify New User Signup is visible
 Then enter name "testUser"
 Then already registered email address "testuser1@1991.com"
 When Click Signup button
-Then Verify error Email Address already exist is visible  
+Then Verify error Email Address already exist is visible
