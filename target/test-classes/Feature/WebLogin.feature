@@ -1,5 +1,5 @@
 @sanity
-Feature: Login_Page
+Feature: Mary_Web_Login_Page
 
     Scenario: Login with valid credentials
         Given user is on login page

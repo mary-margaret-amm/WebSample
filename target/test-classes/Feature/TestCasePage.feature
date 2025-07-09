@@ -1,5 +1,5 @@
 
-Feature: Validating Test Case Page and Product Detail page
+Feature: Mary_Web_Validating Test Case Page and Product Detail page
 
     #   Background: launching url
     #      Given launching the url "https://www.automationexercise.com/"
