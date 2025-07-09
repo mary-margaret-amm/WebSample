@@ -47,7 +47,7 @@ Feature: Mary_Web_Test Case Page, Product Detail page, Add to cart, contact us f
         Then Verify success message "Success! Your details have been submitted successfully." is visible
         And Click Home button and verify that landed to home page successfully "home"
 
-    @reg_5
+    @regression_5
     Scenario: Signup page
         Given launching the url "https://www.automationexercise.com/"
         When verify that the home page is visible successfully
