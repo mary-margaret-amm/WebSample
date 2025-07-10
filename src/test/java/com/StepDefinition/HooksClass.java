@@ -6,13 +6,13 @@ import io.cucumber.java.Before;
 
 public class HooksClass extends BaseClass {
 
-@Before
-public void setup(){
-browserLaunch();
-}
+    @Before
+    public void setup() {
+        browserLaunch();
+    }
 
-@After
+    @After
     public void tearDown() {
-    closeBrowser();
+        closeBrowser();
     }
 }
