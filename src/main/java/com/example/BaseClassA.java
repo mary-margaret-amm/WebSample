@@ -1,4 +1,4 @@
-package com.BaseClass;
+package com.example;
 
 import java.awt.AWTException;
 import java.awt.Robot;

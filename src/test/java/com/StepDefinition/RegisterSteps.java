@@ -3,7 +3,7 @@ package com.StepDefinition;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import base.BaseClass;
+import com.example.BaseClass;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

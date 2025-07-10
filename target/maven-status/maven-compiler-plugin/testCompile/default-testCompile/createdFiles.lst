@@ -1,4 +1,3 @@
-base\BaseClass.class
 pages\LoginPage.class
 com\StepDefinition\RegisterSteps.class
 com\StepDefinition\HooksClass.class
