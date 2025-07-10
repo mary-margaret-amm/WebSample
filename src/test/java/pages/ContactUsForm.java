@@ -1,10 +1,14 @@
 package pages;
 
+import java.time.Duration;
+
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ContactUsForm {
 
@@ -37,10 +41,11 @@ public void enterMessage(String message){
 driver.findElement(By.id("message")).sendKeys(message);
 }
 public void clickSubmit(){
-driver.findElement(By.name("submit"));
+driver.findElement(By.name("submit")).click();
 }
 public void okAlert(){
-    Alert okPress=driver.switchTo().alert();
+    WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
+    Alert okPress=wait.until(ExpectedConditions.alertIsPresent());
     okPress.accept();
 }
 public void sucessMessageVisible(){

@@ -32,13 +32,13 @@ public void enter_subject(String subject) {
 public void enter_message(String message) {
    contactus.enterMessage(message);
 }
-@Then("Click Submit button")
-public void click_submit_button() {
+@Then("Click Submit in contact us form")
+public void click_submit_in_contact_us_form() {
    contactus.clickSubmit();
 }
-@When("Click OK button")
-public void click_ok_button() {
-   contactus.okAlert();
+@When("Click OK alert in contact us form")
+public void click_ok_alert_in_contact_us_form() {
+  contactus.okAlert();
 }
 @Then("Verify success message is visible")
 public void verify_success_message_is_visible() {
