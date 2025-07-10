@@ -1,6 +1,5 @@
 package com.StepDefinition;
-
-import base.BaseClass;
+import com.example.BaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
