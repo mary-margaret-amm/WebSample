@@ -1,7 +1,7 @@
 package com.StepDefinition;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.example.Execution.RemoveProductExe;
@@ -11,19 +11,18 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class RemoveProductFromCart extends RemoveProductExe {
-    public static WebDriver driver;
 
-    @Given("launching the url {string}")
-    public void launch_the_url(String url) {
-
+    @Given("browser launch with url {string}")
+    public void browser_launch_with_url(String string) {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(url);
+        driver.get(string);
+        System.out.println("Browser launched and navigated to: " + string);
 
     }
 
-    @When("verify that the home page is visible successfully")
-    public void verify_that_home_page_is_visible_successfully() {
+    @When("verify if the home page is visible successfully")
+    public void verify_if_the_home_page_is_visible_successfully() {
         String title = "Automation Exercise";
         Assert.assertEquals(title, driver.getTitle());
         System.out.println("The Home page is visible");
