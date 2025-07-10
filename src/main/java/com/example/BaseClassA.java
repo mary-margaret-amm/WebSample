@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:src/main/java/com/example/Pom/BaseClassA.java
-package com.example.Pom;
-========
 package com.example;
->>>>>>>> c192b0a614a1ab82b58c77f7fcb0ca8beceb80a2:src/main/java/com/example/BaseClassA.java
 
 import java.awt.AWTException;
 import java.awt.Robot;

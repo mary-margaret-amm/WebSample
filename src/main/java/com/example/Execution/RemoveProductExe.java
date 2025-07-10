@@ -1,7 +1,7 @@
 package com.example.Execution;
 
+import com.example.BaseClassA;
 import com.example.Locators.RemoveProductLocator;
-import com.example.Pom.BaseClassA;
 
 public class RemoveProductExe extends RemoveProductLocator {
 

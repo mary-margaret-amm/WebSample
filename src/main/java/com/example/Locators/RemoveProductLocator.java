@@ -3,7 +3,7 @@ package com.example.Locators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.example.Pom.BaseClassA;
+import com.example.BaseClassA;
 
 public class RemoveProductLocator extends BaseClassA {
 
