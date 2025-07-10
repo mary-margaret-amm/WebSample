@@ -1,9 +1,10 @@
 package com.StepDefinition;
 
-import base.BaseClass;
+import com.example.BaseClass;
+import com.example.pages.ContactUsForm;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.ContactUsForm;
 
 public class ContactUsSteps extends BaseClass {
     ContactUsForm contactus;

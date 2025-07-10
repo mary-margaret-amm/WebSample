@@ -1,48 +1,49 @@
-// package com.StepDefinition;
+package com.StepDefinition;
 
-// import com.example.BaseClass;
-// import io.cucumber.java.en.And;
-// import io.cucumber.java.en.Given;
-// import io.cucumber.java.en.Then;
-// import io.cucumber.java.en.When;
-// import pages.LoginPage;
+import com.example.BaseClass;
+import com.example.pages.LoginPage;
 
-// public class LoginSteps extends BaseClass {
-// LoginPage loginpage;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-// @Given("User is on the login page")
-// public void user_is_on_the_login_page() {
-// loginpage = new LoginPage(driver);
-// loginpage.openLoginPage("https://automationexercise.com/login");
-// }
+public class LoginSteps extends BaseClass {
+LoginPage loginpage;
 
-// @When("User enters username {string}")
-// public void user_enters_username(String username) {
-// loginpage.enterUsername(username);
-// }
+@Given("User is on the login page")
+public void user_is_on_the_login_page() {
+loginpage = new LoginPage(driver);
+loginpage.openLoginPage("https://automationexercise.com/login");
+}
 
-// @And("User enters password {string}")
-// public void user_enters_password(String password) {
-// loginpage.enterPassword(password);
-// }
+@When("User enters username {string}")
+public void user_enters_username(String username) {
+loginpage.enterUsername(username);
+}
 
-// @And("User clicks the login button")
-// public void user_clicks_the_login_button() {
-// loginpage.loginClick();
-// }
+@And("User enters password {string}")
+public void user_enters_password(String password) {
+loginpage.enterPassword(password);
+}
 
-// @Then("Login should be successful")
-// public void login_should_be_successful() {
-// System.out.println("Successfully loggedin");
-// }
+@And("User clicks the login button")
+public void user_clicks_the_login_button() {
+loginpage.loginClick();
+}
 
-// @Then("User should be Logged in as {string}")
-// public void user_should_be_logged_in_as(String expectedUserName) {
-// loginpage.verifyLoggedInUser(expectedUserName);
-// }
+@Then("Login should be successful")
+public void login_should_be_successful() {
+System.out.println("Successfully loggedin");
+}
 
-// @Then("Click Logout button")
-// public void click_logout_button() {
-// loginpage.logOut();
-// }
-// }
+@Then("User should be Logged in as {string}")
+public void user_should_be_logged_in_as(String expectedUserName) {
+loginpage.verifyLoggedInUser(expectedUserName);
+}
+
+@Then("Click Logout button")
+public void click_logout_button() {
+loginpage.logOut();
+}
+}

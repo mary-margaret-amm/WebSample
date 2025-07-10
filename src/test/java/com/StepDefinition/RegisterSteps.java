@@ -4,10 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.example.BaseClass;
+import com.example.pages.RegisterFunctionality;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.RegisterFunctionality;
 
 public class RegisterSteps extends BaseClass {
 
