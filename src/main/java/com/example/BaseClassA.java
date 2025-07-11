@@ -296,9 +296,9 @@ public class BaseClassA {
         FileHandler.copy(src, path);
     }
 
-    public static void scrollBy() {
+    public static void scrollBy(int i, int j) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,1000)");
+        js.executeScript("window.scrollBy(i,j)");
     }
 
     public static void excel_Write(String value) {
