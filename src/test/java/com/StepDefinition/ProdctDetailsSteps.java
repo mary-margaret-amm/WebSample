@@ -22,6 +22,7 @@ public void click_on_product_option() {
 public void verify_user_is_navigated_to_all_products_page() {
     productdetails.AllProductVisible();
 }
+
 @When("Click on View Product of first product")
 public void click_on_view_product_of_first_product() {
     productdetails.FirstViewProdcutClick();

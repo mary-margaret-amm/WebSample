@@ -27,6 +27,17 @@ public void AllProductVisible(){
     boolean allproductIsVisible = AllProductElement.isDisplayed();
     Assert.assertTrue("All Product not visible", allproductIsVisible);
 }
+public void SearchProductVisible(){
+    WebElement SerachProductElement= driver.findElement(By.id("search_product"));
+    boolean searchProductVisible = SerachProductElement.isDisplayed();
+    Assert.assertTrue("All Product not visible", searchProductVisible);
+}
+public void SearchProductclick(){
+    WebElement SerachProductElement= driver.findElement(By.id("search_product"));
+    boolean searchProductVisible = SerachProductElement.isDisplayed();
+    Assert.assertTrue("All Product not visible", searchProductVisible);
+}
+
 public void FirstViewProdcutClick(){
     driver.findElement(By.xpath("//a[@href='/product_details/1']")).click();
 }
