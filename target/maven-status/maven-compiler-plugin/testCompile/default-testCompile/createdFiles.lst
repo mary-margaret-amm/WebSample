@@ -1,9 +1,0 @@
-pages\LoginPage.class
-com\StepDefinition\RegisterSteps.class
-com\StepDefinition\HooksClass.class
-com\StepDefinition\LoginSteps.class
-com\Runner\RunnerClass.class
-com\StepDefinition\TestCasePage.class
-pages\RegisterFunctionality.class
-com\StepDefinition\WebLogin.class
-com\StepDefinition\FbLogin.class
