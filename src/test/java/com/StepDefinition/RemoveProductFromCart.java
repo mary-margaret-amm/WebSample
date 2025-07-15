@@ -3,7 +3,6 @@ package com.StepDefinition;
 import org.junit.Assert;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.example.BaseClassA;
 import com.example.Execution.RemoveProductExe;
 
 import io.cucumber.java.en.Given;
@@ -40,7 +39,7 @@ public class RemoveProductFromCart extends RemoveProductExe {
 
     @When("Click Cart button")
     public void click_cart_button() {
-        BaseClassA.get("https://www.automationexercise.com/view_cart");
+        driver.get("https://www.automationexercise.com/view_cart");
 
     }
 
