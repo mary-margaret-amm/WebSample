@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Feature", glue = "com.StepDefinition", dryRun = false,
+@CucumberOptions(features = "src/test/resources/Feature/Test.feature", glue = "com.StepDefinition", dryRun = false,
                 // tags = "@sanity",
                 // monochrome = true,
                 // publish = true
