@@ -1,5 +1,5 @@
 
-
+@sann
 Feature:Mary_Web_Remove Products from cart
 @sanity
 Scenario: Validating if the products are removed from cart

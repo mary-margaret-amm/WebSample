@@ -1,4 +1,5 @@
 
+@rg2
 Feature: Mary_Web_Test Case Page, Product Detail page, Add to cart, contact us form, SignUp details
 
 
@@ -55,18 +56,18 @@ Feature: Mary_Web_Test Case Page, Product Detail page, Add to cart, contact us f
         And Fill all details in Signup and the create account
             | Name  | Margaret                  |
             | email | marymargaret.ap@gmail.com |
-        And Enter account information1
-            | Mary       |
-            | Margaret   |
-            | XXX        |
-            | YYY        |
-            | YYY        |
-            | India      |
-            | TamilNadu  |
-            | Chennai    |
-            | 600041     |
-            | 9876543210 |
-      
+# And Enter account information1
+#     | Mary       |
+#     | Margaret   |
+#     | XXX        |
+#     | YYY        |
+#     | YYY        |
+#     | India      |
+#     | TamilNadu  |
+#     | Chennai    |
+#     | 600041     |
+#     | 9876543210 |
+
 
 
 

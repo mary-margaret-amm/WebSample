@@ -1,4 +1,4 @@
-@smoke_1
+@sm1
 Feature: Mary_Web_Login Page with Scenario outline
 
 #Background: Browser launch
