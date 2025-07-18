@@ -1,5 +1,7 @@
 package com.example.pages;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -40,5 +42,22 @@ public void FirstProductDetails(){
     WebElement productavailavility= driver.findElement(By.xpath("//p[text()=\" In Stock\"]"));
     Assert.assertTrue("Product availability not displayed", productavailavility.isDisplayed());
 }
-
+public void enterProductInSearch(String product){
+    driver.findElement(By.id("search_product")).sendKeys(product);
+}
+public void searchProductClick(){
+    driver.findElement(By.id("submit_search")).click();
+}
+public void searchedProductVisible(){
+    WebElement searchedProductElement= driver.findElement(By.xpath("//h2[text()='Searched Products']"));
+    boolean searchedProductIsVisible = searchedProductElement.isDisplayed();
+    Assert.assertTrue("Searched Product not visible", searchedProductIsVisible);
+}
+public void verifyAllProductsMatchSearch(String searchedproductname) {
+    List<WebElement> products = driver.findElements(By.xpath("//div[@class='productinfo text-center']/p"));
+    for (WebElement product : products){
+        String productname = product.getText();
+       Assert.assertTrue(productname, productname.toLowerCase().contains(searchedproductname.toLowerCase())); 
+    }
+}
 }
