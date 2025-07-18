@@ -86,6 +86,7 @@ public class AddFromRecommendedItems {
         // System.out.println("The product is not displayed");
         // }
         System.out.println("cart is empty");
+        driver.quit();
 
     }
 

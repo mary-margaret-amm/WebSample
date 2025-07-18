@@ -18,7 +18,7 @@ And the total price in the cart should match the mobile's price
 Examples: 
 |mobileName|brand|network_type|expected_mobile|
 |iPhone|Apple|4G|iPhone 15|
-
+|Samsung Galaxy|Samsung|4G|Samsung Galaxy|
 
 
 

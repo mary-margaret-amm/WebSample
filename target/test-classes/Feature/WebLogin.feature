@@ -1,4 +1,4 @@
-@sanity123
+@sanity
 Feature: Mary_Web_Login_Page
 
     Scenario: Login with valid credentials

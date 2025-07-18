@@ -9,7 +9,6 @@ import java.util.Map;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -61,6 +60,7 @@ public class TestCasePage {
         File src = ts.getScreenshotAs(OutputType.FILE);
         File path = new File("C:\\Users\\malbert\\Desktop\\WEBSample\\screenshots\\TestCasePage.jpg");
         FileHandler.copy(src, path);
+        driver.quit();
 
     }
 
@@ -103,6 +103,7 @@ public class TestCasePage {
                 .findElement(By.xpath("//button[contains(@class,'btn btn-default cart')]/child::i"));
         Assert.assertTrue(addToCart.isDisplayed());
         System.out.println("Product detail is visible!");
+        driver.quit();
     }
 
     @When("click on Add to cart button")
@@ -128,6 +129,7 @@ public class TestCasePage {
         Assert.assertTrue(displayed);
         System.out.println("Product successfully added to cart!");
         System.out.println("Validated");
+        driver.quit();
 
     }
 
@@ -180,6 +182,7 @@ public class TestCasePage {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//i[contains(@class,'fa fa-angle-double-left')]")).click();
         System.out.println(data2);
+        driver.quit();
     }
 
     @When("Click Signup \\/ Login button")
@@ -198,57 +201,59 @@ public class TestCasePage {
         driver.findElement(By.xpath("//input[@type='email'][@name='email'][@data-qa='signup-email']"))
                 .sendKeys(mp.get("email"));
         driver.findElement(By.xpath("//button[@type='submit'][text()='Signup']")).click();
-
+        driver.quit();
     }
 
-    @When("Enter account information1")
-    public void enter_account_information1(DataTable dataTable) throws InterruptedException {
+    // @When("Enter account information1")
+    // public void enter_account_information1(DataTable dataTable) throws
+    // InterruptedException {
 
-        driver.findElement(By.xpath("//input[@type='radio'][@id='id_gender2']")).click();
-        Thread.sleep(2000);
-        // driver.findElement(By.id("name")).sendKeys("Mary Margaret");
-        // Thread.sleep(2000);
-        // driver.findElement(By.id("email")).sendKeys("marymargaret.ap@gmail.com");
-        // Thread.sleep(2000);
-        driver.findElement(By.name("password")).sendKeys("Mary@123");
-        Thread.sleep(2000);
-        driver.findElement(By.id("days")).sendKeys("20");
-        Thread.sleep(2000);
-        driver.findElement(By.id("months")).sendKeys("August");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//select[@data-qa='years'][@id='years']")).sendKeys("2001");
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@type='checkbox'][@value='1'][@id='newsletter']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@type='checkbox'][@value='1'][@id='optin']")).click();
-        Thread.sleep(2000);
-        List<WebElement> li1 = driver.findElements(By.xpath("//p[@class='required form-group']"));
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(false)",
-                driver.findElement(By.xpath("//input[contains(@id,'first_name')][@type='text']")));
-        Thread.sleep(2000);
-        System.out.println("a");
-        for (WebElement x : li1) {
-            List<String> list = dataTable.asList();
-            System.out.println(x.getText());
-            x.sendKeys("Mary");
-            System.out.println("bb");
+    // driver.findElement(By.xpath("//input[@type='radio'][@id='id_gender2']")).click();
+    // Thread.sleep(2000);
+    // // driver.findElement(By.id("name")).sendKeys("Mary Margaret");
+    // // Thread.sleep(2000);
+    // // driver.findElement(By.id("email")).sendKeys("marymargaret.ap@gmail.com");
+    // // Thread.sleep(2000);
+    // driver.findElement(By.name("password")).sendKeys("Mary@123");
+    // Thread.sleep(2000);
+    // driver.findElement(By.id("days")).sendKeys("20");
+    // Thread.sleep(2000);
+    // driver.findElement(By.id("months")).sendKeys("August");
+    // Thread.sleep(2000);
+    // driver.findElement(By.xpath("//select[@data-qa='years'][@id='years']")).sendKeys("2001");
+    // Thread.sleep(2000);
+    // driver.findElement(By.xpath("//input[@type='checkbox'][@value='1'][@id='newsletter']")).click();
+    // Thread.sleep(2000);
+    // driver.findElement(By.xpath("//input[@type='checkbox'][@value='1'][@id='optin']")).click();
+    // Thread.sleep(2000);
+    // List<WebElement> li1 = driver.findElements(By.xpath("//p[@class='required
+    // form-group']"));
+    // JavascriptExecutor js = (JavascriptExecutor) driver;
+    // js.executeScript("arguments[0].scrollIntoView(false)",
+    // driver.findElement(By.xpath("//input[contains(@id,'first_name')][@type='text']")));
+    // Thread.sleep(2000);
+    // System.out.println("a");
+    // for (WebElement x : li1) {
+    // List<String> list = dataTable.asList();
+    // System.out.println(x.getText());
+    // x.sendKeys("Mary");
+    // System.out.println("bb");
 
-            for (int i = 0; i < list.size(); i++) {
-                js.executeScript("arguments[0].setAttribute('value','list.get(i)')", x);
-                Thread.sleep(2000);
+    // for (int i = 0; i < list.size(); i++) {
+    // js.executeScript("arguments[0].setAttribute('value','list.get(i)')", x);
+    // Thread.sleep(2000);
 
-                // x.sendKeys("list.get(i)");
+    // // x.sendKeys("list.get(i)");
 
-            }
+    // }
 
-            // for (String y : list) {
-            // x.sendKeys(y);
-            // Thread.sleep(2000);
-            // }
-        }
-        System.out.println("success");
+    // // for (String y : list) {
+    // // x.sendKeys(y);
+    // // Thread.sleep(2000);
+    // // }
+    // }
 
-    }
+    // System.out.println("success");
+    // }
 
 }

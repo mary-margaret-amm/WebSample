@@ -1,4 +1,4 @@
-@sa1
+@sanity_2
 Feature: Web_Mary_AddToCart_RecommendedItems
 
 Background:

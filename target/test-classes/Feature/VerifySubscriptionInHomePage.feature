@@ -1,4 +1,3 @@
-@smA
 Feature: Mary_Web_Verify Subscription in Home Page
     @regs_1
     Scenario: Verify Subscription in Home Page

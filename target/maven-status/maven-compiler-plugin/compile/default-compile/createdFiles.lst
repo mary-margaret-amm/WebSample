@@ -1,0 +1,12 @@
+com\example\Locators\HomePageLocator.class
+com\example\BaseClassA.class
+com\example\Execution\HomePageExe.class
+com\example\pages\LoginPage.class
+com\example\Locators\RemoveProductLocator.class
+com\example\Main.class
+com\example\pages\ContactUsForm.class
+com\example\BaseClass.class
+com\example\pages\ProductDetails.class
+com\example\pages\RegisterFunctionality.class
+com\example\pages\VerifyTestCasePage.class
+com\example\Execution\RemoveProductExe.class
