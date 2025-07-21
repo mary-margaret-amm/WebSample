@@ -7,14 +7,18 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class ProdctDetailsSteps extends BaseClass {
+
 ProductDetails productdetails;
+
+public ProdctDetailsSteps() {
+        productdetails = new ProductDetails(driver);
+    }
 
 @Then("verify product option is visible")
 public void verify_product_option_is_visible() {
-    productdetails=new ProductDetails(driver);
     productdetails.ProductOptionVisible();
 }
-@When("click on product option")
+@Then("click on product option")
 public void click_on_product_option() {
     productdetails.ProductOptionClick();
 }
@@ -30,4 +34,5 @@ public void click_on_view_product_of_first_product() {
 public void verify_product_name_price_and_availability() {
    productdetails.FirstProductDetails();
 }
+
 }
